@@ -7,6 +7,13 @@ if (toggleButton && siteNav) {
     toggleButton.setAttribute('aria-expanded', String(!expanded));
     siteNav.classList.toggle('is-open');
   });
+
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      toggleButton.setAttribute('aria-expanded', 'false');
+      siteNav.classList.remove('is-open');
+    });
+  });
 }
 
 document.querySelectorAll('[data-year]').forEach((element) => {
@@ -16,5 +23,8 @@ document.querySelectorAll('[data-year]').forEach((element) => {
 document.querySelectorAll('.table-scroll').forEach((wrapper) => {
   if (!wrapper.getAttribute('role')) {
     wrapper.setAttribute('role', 'region');
+  }
+  if (!wrapper.getAttribute('tabindex')) {
+    wrapper.setAttribute('tabindex', '0');
   }
 });
