@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Definition and Operations</title>
+    <meta name="description" content="System overview, architecture, operating concept, features, team structure, development phases, and product cost model.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="author" content="YOUR-NAME-HERE">
+    <link rel="canonical" href="https://YOUR-DOMAIN-HERE/product-operations">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Product Definition and Operations">
+    <meta property="og:description" content="Architecture, operating model and cost basis for the remote monitoring system.">
+    <meta property="og:url" content="https://YOUR-DOMAIN-HERE/product-operations">
+    <meta property="og:image" content="https://YOUR-DOMAIN-HERE/assets/images/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Definition and Operations">
+    <meta name="twitter:description" content="Architecture, features, team structure and development cost model.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN-HERE/assets/images/og-image.svg">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="brand-block">
+          <a class="brand" href="index.html" aria-label="Go to home page">
+            <span class="brand-mark" aria-hidden="true">AV</span>
+            <span class="brand-text">Business Model Website</span>
+          </a>
+          <p class="brand-tagline">Static website conversion of the uploaded Word document</p>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="business-case.html">Business Case</a></li>
+            <li><a href="product-operations.html" aria-current="page">Product & Operations</a></li>
+            <li><a href="strategy.html">Strategy & Risk</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Product and operations</p>
+          <h1>System architecture, feature set and delivery cost</h1>
+          <p class="lede">
+            This page reworks the source document's product-definition and costing chapters into a web-native format.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column">
+          <article>
+            <h2>Product overview</h2>
+            <p>
+              The proposed product is a real-time remote monitoring and emergency control system for automated vehicles.
+              It is intended to improve safety, reliability and operational efficiency in controlled environments by combining
+              autonomous trajectory tracking with remote supervision.
+            </p>
+            <p>
+              The product is framed as an intermediate architecture. Vehicles operate autonomously under normal conditions,
+              while a remote operator can monitor state, review perception inputs and intervene in abnormal scenarios.
+            </p>
+          </article>
+
+          <aside class="callout">
+            <h2>Product positioning</h2>
+            <p>
+              Lightweight, cost-effective and designed for campuses, business parks, low-speed routes and other controlled environments where
+              full continuous teleoperation is unnecessary but safety oversight remains important.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">System architecture</p>
+            <h2>Four major subsystems</h2>
+          </div>
+
+          <figure class="architecture-figure">
+            <img src="assets/images/system-architecture.svg" alt="Simplified architecture diagram showing vehicle subsystem, control system, communication layer and remote monitoring interface">
+            <figcaption>Simplified architecture drawn from the source document's subsystem description.</figcaption>
+          </figure>
+
+          <div class="grid cards-4">
+            <article class="card">
+              <h3>Vehicle subsystem</h3>
+              <p>Includes cameras, LiDAR, localisation hardware and onboard data generation for position, speed and scene perception.</p>
+            </article>
+            <article class="card">
+              <h3>Control system</h3>
+              <p>Implements longitudinal and lateral control to maintain accurate trajectory tracking and stable behaviour.</p>
+            </article>
+            <article class="card">
+              <h3>Remote monitoring interface</h3>
+              <p>Human-machine interface for vehicle state, camera feeds, trajectory information, alerts and intervention controls.</p>
+            </article>
+            <article class="card">
+              <h3>Communication layer</h3>
+              <p>Bidirectional low-latency data flow between the vehicle and the operator, with validation and consistency checks.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Operating concept</p>
+            <h2>How the system is intended to work</h2>
+          </div>
+
+          <ol class="flow-list">
+            <li>Sensor data is collected and processed onboard the vehicle.</li>
+            <li>The control system maintains trajectory tracking.</li>
+            <li>Vehicle and sensor state are transmitted to the remote operator interface.</li>
+            <li>The operator supervises performance in real time.</li>
+            <li>If an anomaly occurs, the operator can intervene through emergency braking or override commands.</li>
+          </ol>
+
+          <div class="grid cards-3">
+            <article class="card">
+              <h3>Normal mode</h3>
+              <p>Autonomous trajectory following on predefined routes.</p>
+            </article>
+            <article class="card">
+              <h3>Supervision mode</h3>
+              <p>Human-in-the-loop oversight through a remote HMI and live data feeds.</p>
+            </article>
+            <article class="card">
+              <h3>Intervention mode</h3>
+              <p>Selective remote action in safety-critical or abnormal conditions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Functional requirements</p>
+            <h2>Core, safety and communication features</h2>
+          </div>
+
+          <div class="grid cards-3">
+            <article class="card">
+              <h3>Core functional features</h3>
+              <ul class="list-tight">
+                <li>Trajectory tracking with longitudinal and lateral control</li>
+                <li>Real-time monitoring of vehicle and sensor data</li>
+                <li>Remote supervision through a dedicated HMI</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Safety features</h3>
+              <ul class="list-tight">
+                <li>Emergency braking available to the operator</li>
+                <li>Fail-safe mechanisms for communication or control failure</li>
+                <li>Redundancy checks to improve integrity and reliability</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Communication features</h3>
+              <ul class="list-tight">
+                <li>Low-latency streaming with a target below 200 ms</li>
+                <li>Bidirectional communication for control and feedback</li>
+                <li>Data integrity checks to reduce information loss</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Development basis</p>
+            <h2>Team structure and duration</h2>
+          </div>
+
+          <div class="table-scroll" tabindex="0" aria-label="Development team structure table">
+            <table>
+              <caption>Proposed development team</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Role</th>
+                  <th scope="col">Number of engineers</th>
+                  <th scope="col">Primary responsibility</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Software engineers</th>
+                  <td>2</td>
+                  <td>Backend logic, communication stack, system integration</td>
+                </tr>
+                <tr>
+                  <th scope="row">Control engineer</th>
+                  <td>1</td>
+                  <td>Trajectory tracking, control algorithms, vehicle interface</td>
+                </tr>
+                <tr>
+                  <th scope="row">HMI engineer</th>
+                  <td>1</td>
+                  <td>Monitoring dashboard and operator interface</td>
+                </tr>
+                <tr>
+                  <th scope="row">Systems integration engineer</th>
+                  <td>1</td>
+                  <td>Hardware-software integration and sensor interfacing</td>
+                </tr>
+                <tr>
+                  <th scope="row">Test and validation engineer</th>
+                  <td>1</td>
+                  <td>Testing, debugging and validation scenarios</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="grid cards-4">
+            <article class="mini-card">
+              <h3>Phase 1</h3>
+              <p>Prototype development — 2 months</p>
+            </article>
+            <article class="mini-card">
+              <h3>Phase 2</h3>
+              <p>System integration — 2 months</p>
+            </article>
+            <article class="mini-card">
+              <h3>Phase 3</h3>
+              <p>Testing and validation — 2 months</p>
+            </article>
+            <article class="mini-card">
+              <h3>Phase 4</h3>
+              <p>Deployment preparation — 1 month</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Cost model</p>
+            <h2>Estimated product development cost</h2>
+          </div>
+
+          <div class="grid cards-2">
+            <article class="card">
+              <h3>Personnel cost</h3>
+              <p>The document estimates total personnel cost for seven months at approximately £237,000.</p>
+            </article>
+            <article class="card">
+              <h3>Software infrastructure</h3>
+              <p>Cloud compute, storage, monitoring and development tools are grouped at approximately £5,000.</p>
+            </article>
+            <article class="card">
+              <h3>Testing and validation</h3>
+              <p>Field testing, simulation, data analysis, debugging and deployment preparation total approximately £17,000.</p>
+            </article>
+            <article class="card">
+              <h3>Hardware and prototype cost</h3>
+              <p>Rounded to £36,000 in the final total, based on line items covering cameras, LiDAR, GNSS/INS, onboard compute, drive-by-wire and networking.</p>
+            </article>
+          </div>
+
+          <div class="table-scroll" tabindex="0" aria-label="Development cost summary table">
+            <table>
+              <caption>Development cost summary used on this website</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Cost component</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Personnel cost</th>
+                  <td>£237,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Hardware and prototype cost</th>
+                  <td>£36,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Software infrastructure cost</th>
+                  <td>£5,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Testing and validation cost</th>
+                  <td>£17,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Subtotal</th>
+                  <td>£295,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">10% allowance</th>
+                  <td>£29,500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Total development cost</th>
+                  <td>£324,500 (rounded to £325,000)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="note">
+            Quality-control note: the source document contains an internal inconsistency in the hardware section, where line items total £35,900 and the final summary rounds to £36,000, but one intermediate line says “≈ £26,000”.
+            This website uses the rounded £36,000 figure, because it aligns with the stated line-item total and the final overall development-cost table.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <figure class="figure-placeholder">
+            <div class="placeholder-box">
+              <strong>Placeholder for source hardware imagery</strong>
+              <p>
+                Optional insertion point for actual product photographs, HMI screenshots, or remote visualisation mock-ups if they become available later.
+              </p>
+            </div>
+            <figcaption>Recommended asset replacement area for richer product visuals.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Business Model Website</h2>
+          <p>Static HTML, CSS and JavaScript build intended for GitHub upload and Vercel deployment.</p>
+        </div>
+
+        <div>
+          <h2>Pages</h2>
+          <ul class="list-plain">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="business-case.html">Business Case</a></li>
+            <li><a href="product-operations.html">Product & Operations</a></li>
+            <li><a href="strategy.html">Strategy & Risk</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Project notes</h2>
+          <p>Replace domain, author, social preview, and missing-figure placeholders before going live.</p>
+          <p class="footer-meta">© <span data-year></span> YOUR-NAME-HERE</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
