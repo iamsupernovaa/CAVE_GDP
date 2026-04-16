@@ -9,10 +9,10 @@ This repository contains a static website version of the uploaded business-model
 - `product-operations.html` – product overview, architecture, features, development basis and cost model
 - `strategy.html` – business model canvas, risk analysis, SWOT and strategic summary
 - `404.html` – custom not found page
-- `assets/css/styles.css` – all site styling
-- `assets/js/main.js` – mobile navigation and small progressive enhancement helpers
-- `assets/icons/favicon.svg` – site icon
-- `assets/images/` – SVG visual assets for hero, architecture and social sharing
+- `asset/css/styles.css` – all site styling
+- `asset/js/main.js` – mobile navigation and small progressive enhancement helpers
+- `asset/icons/favicon.svg` – site icon
+- `asset/images/` – SVG visual assets for hero, architecture and social sharing
 - `robots.txt` and `sitemap.xml` – crawl guidance
 - `vercel.json` – Vercel static-site configuration with clean URLs and headers
 

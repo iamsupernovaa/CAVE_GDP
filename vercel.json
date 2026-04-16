@@ -4,7 +4,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/asset/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
