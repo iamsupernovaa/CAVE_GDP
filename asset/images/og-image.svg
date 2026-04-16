@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Open Graph preview image</title>
+  <desc id="desc">Social preview image for the remote monitoring and emergency intervention system website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1080" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#1a2d52"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="240" y1="90" x2="950" y2="550" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f5eff"/>
+      <stop offset="1" stop-color="#3cc6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="78" y="86" width="148" height="148" rx="34" fill="url(#accent)"/>
+  <text x="115" y="178" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#ffffff">AV</text>
+  <text x="280" y="185" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#ffffff">Remote Monitoring</text>
+  <text x="280" y="270" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#ffffff">& Emergency Intervention</text>
+  <text x="282" y="348" font-family="Arial, sans-serif" font-size="30" fill="#c9d7ff">Static website conversion of the uploaded business-model document</text>
+
+  <rect x="280" y="410" width="820" height="108" rx="24" fill="#13213b"/>
+  <text x="320" y="465" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#ffffff">Business case • Product definition • Market sizing • Risk analysis</text>
+  <text x="320" y="505" font-family="Arial, sans-serif" font-size="24" fill="#d6e3ff">Replace YOUR-DOMAIN-HERE before publishing</text>
+</svg>

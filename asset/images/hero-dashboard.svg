@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Remote monitoring dashboard illustration</title>
+  <desc id="desc">Stylised dashboard with route map, vehicle telemetry cards, alert bar and remote camera frame.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="820" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#18284a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="120" x2="780" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f5eff"/>
+      <stop offset="1" stop-color="#43b2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="36" fill="#e9eefb"/>
+  <rect x="40" y="40" width="880" height="640" rx="28" fill="url(#bg)"/>
+  <rect x="80" y="88" width="260" height="544" rx="20" fill="#111d35"/>
+  <rect x="372" y="88" width="508" height="312" rx="20" fill="#0f1a2c"/>
+  <rect x="372" y="426" width="168" height="206" rx="20" fill="#0f1a2c"/>
+  <rect x="562" y="426" width="152" height="206" rx="20" fill="#0f1a2c"/>
+  <rect x="734" y="426" width="146" height="206" rx="20" fill="#0f1a2c"/>
+
+  <path d="M130 520c38-88 84-153 139-197 44-35 69-56 79-93" fill="none" stroke="#335694" stroke-width="8" stroke-linecap="round"/>
+  <path d="M128 521c39-88 87-145 151-174 59-27 96-31 148-121" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="128" cy="521" r="10" fill="#43b2ff"/>
+  <circle cx="287" cy="353" r="10" fill="#43b2ff"/>
+  <circle cx="427" cy="228" r="12" fill="#ffbf47"/>
+
+  <rect x="106" y="114" width="208" height="92" rx="16" fill="#17284a"/>
+  <text x="132" y="150" font-family="Arial, sans-serif" font-size="22" fill="#d8e4ff">Vehicle status</text>
+  <text x="132" y="182" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Autonomy active</text>
+
+  <rect x="400" y="116" width="452" height="40" rx="12" fill="#152846"/>
+  <rect x="414" y="128" width="160" height="16" rx="8" fill="#43b2ff"/>
+  <rect x="590" y="128" width="94" height="16" rx="8" fill="#2d446f"/>
+  <rect x="698" y="128" width="126" height="16" rx="8" fill="#2d446f"/>
+
+  <rect x="400" y="178" width="452" height="190" rx="18" fill="#14233e"/>
+  <circle cx="625" cy="274" r="78" fill="#0e1b32" stroke="#1f5eff" stroke-width="8"/>
+  <text x="593" y="285" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">27</text>
+  <text x="612" y="315" font-family="Arial, sans-serif" font-size="22" fill="#c8d8ff">km/h</text>
+
+  <rect x="400" y="454" width="112" height="110" rx="18" fill="#152846"/>
+  <text x="418" y="492" font-family="Arial, sans-serif" font-size="18" fill="#ced8f3">Latency</text>
+  <text x="418" y="535" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff">146</text>
+  <text x="486" y="535" font-family="Arial, sans-serif" font-size="22" fill="#ced8f3">ms</text>
+
+  <rect x="590" y="454" width="96" height="110" rx="18" fill="#152846"/>
+  <text x="608" y="492" font-family="Arial, sans-serif" font-size="18" fill="#ced8f3">Alerts</text>
+  <text x="621" y="535" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#ffbf47">1</text>
+
+  <rect x="754" y="454" width="106" height="110" rx="18" fill="#152846"/>
+  <text x="772" y="492" font-family="Arial, sans-serif" font-size="18" fill="#ced8f3">Operator</text>
+  <text x="772" y="535" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Ready</text>
+
+  <rect x="400" y="585" width="460" height="20" rx="10" fill="#152846"/>
+  <rect x="400" y="585" width="364" height="20" rx="10" fill="#3cc98b"/>
+</svg>
